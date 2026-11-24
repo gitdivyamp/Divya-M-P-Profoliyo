@@ -1,0 +1,1105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya M P | My Personal World</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --navy: #25213f;
+    --purple: #7963b8;
+    --lavender: #d9cdf7;
+    --pale: #f8f5ff;
+    --ink: #35304f;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--pale);
+    color: var(--ink);
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+header {
+    background: rgba(37,33,63,0.97);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #bca9ed;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #e3d6ff;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d9c7ff;
+}
+
+/* SECTION DESIGN */
+
+section {
+    padding: 90px 9%;
+    position: relative;
+    scroll-margin-top: 70px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h1 {
+    font-size: 39px;
+    color: var(--navy);
+}
+
+.section-title h1 span {
+    color: var(--purple);
+}
+
+.section-title p {
+    color: #817b99;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+
+.ornament {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    color: var(--purple);
+}
+
+.ornament::before,
+.ornament::after {
+    content: "";
+    width: 55px;
+    height: 1px;
+    background: #b9a8e6;
+}
+
+/* DECORATIVE BORDER */
+
+.frame {
+    border: 1px solid #c5b4ed;
+    outline: 1px solid #c5b4ed;
+    outline-offset: 7px;
+    border-radius: 22px;
+    position: relative;
+}
+
+.frame::before {
+    content: "✦";
+    position: absolute;
+    top: -19px;
+    left: 20px;
+    color: #8a70c6;
+    background: var(--pale);
+    padding: 0 9px;
+    font-size: 22px;
+}
+
+.frame::after {
+    content: "✦";
+    position: absolute;
+    bottom: -19px;
+    right: 20px;
+    color: #8a70c6;
+    background: var(--pale);
+    padding: 0 9px;
+    font-size: 22px;
+}
+
+/* HOME */
+
+.home {
+    min-height: 90vh;
+    background:
+        radial-gradient(circle at 85% 20%, #66548f 0, transparent 35%),
+        linear-gradient(135deg, #25213f, #40365e);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.home::before {
+    content: "✧";
+    position: absolute;
+    top: 50px;
+    right: 10%;
+    font-size: 90px;
+    color: rgba(255,255,255,0.15);
+}
+
+.home::after {
+    content: "♫";
+    position: absolute;
+    bottom: 25px;
+    left: 5%;
+    font-size: 80px;
+    color: rgba(255,255,255,0.12);
+}
+
+.home-content {
+    max-width: 600px;
+    z-index: 1;
+}
+
+.small-heading {
+    color: #d7c6ff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.home h1 {
+    font-size: clamp(42px, 6vw, 65px);
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #d9c9ff;
+}
+
+.home h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #e2d9ff;
+    margin-bottom: 25px;
+}
+
+.home-content p {
+    color: #e6e1f2;
+    font-size: 14px;
+}
+
+.home-art {
+    width: 290px;
+    height: 340px;
+    border: 1px solid #c7b5ef;
+    outline: 1px solid #c7b5ef;
+    outline-offset: 9px;
+    border-radius: 150px 150px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(160deg, #7160a4, #393152);
+    z-index: 1;
+    text-align: center;
+}
+
+.home-art .note {
+    font-size: 100px;
+    color: #e6d9ff;
+    line-height: 1.5;
+}
+
+.home-art h2 {
+    color: white;
+    font-size: 21px;
+}
+
+.home-art p {
+    font-size: 11px;
+    color: #ddd1fa;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid #d9c9ff;
+    color: white;
+    border-radius: 30px;
+    margin-top: 28px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d9c9ff;
+    color: #25213f;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    background: #f8f5ff;
+}
+
+.intro-box {
+    max-width: 950px;
+    margin: auto;
+    padding: 45px;
+    background: white;
+    border: 1px solid #cbb9ed;
+    border-radius: 22px;
+    outline: 1px dashed #b9a8e6;
+    outline-offset: 6px;
+    text-align: center;
+}
+
+.intro-box p {
+    margin-bottom: 17px;
+    color: #69627e;
+    font-size: 14px;
+}
+
+/* ABOUT CARDS */
+
+.about {
+    background: #eee9fb;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #d0c0ee;
+    border-radius: 18px;
+    padding: 32px;
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(70,55,110,0.06);
+}
+
+.card::after {
+    content: "✧";
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    color: #a38bd7;
+    font-size: 22px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(80,60,130,0.13);
+    border-color: #9279cf;
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #7963b8;
+    margin-bottom: 12px;
+}
+
+.card p, .card li {
+    font-size: 13px;
+    color: #69627e;
+}
+
+.icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+/* HOBBIES */
+
+.hobbies {
+    background: #f8f5ff;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.hobby-card {
+    text-align: center;
+    padding: 32px 20px;
+    border: 1px solid #cbb9ed;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #fff, #f1ebff);
+    transition: 0.3s;
+}
+
+.hobby-card:hover {
+    transform: scale(1.04);
+    background: #e9e0ff;
+}
+
+.hobby-card .icon {
+    font-size: 43px;
+}
+
+.hobby-card h2 {
+    color: #65519f;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    color: #77708b;
+    font-size: 12px;
+}
+
+/* MUSIC */
+
+.music {
+    background: #292541;
+    color: white;
+}
+
+.music .section-title h1 {
+    color: white;
+}
+
+.music .section-title p {
+    color: #d4c8ef;
+}
+
+.music-box {
+    max-width: 950px;
+    margin: auto;
+    padding: 45px;
+    border: 1px solid #a995d9;
+    outline: 1px dashed #a995d9;
+    outline-offset: 7px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.05);
+}
+
+.music-box h2 {
+    font-size: 28px;
+    color: #ddceff;
+    margin-bottom: 20px;
+}
+
+.music-box p {
+    color: #e3dff0;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.music-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.music-highlight {
+    padding: 23px;
+    text-align: center;
+    border: 1px solid #8977b7;
+    border-radius: 17px;
+    background: rgba(255,255,255,0.06);
+}
+
+.music-highlight h3 {
+    color: #e0d2ff;
+    font-size: 18px;
+}
+
+.music-highlight p {
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+/* SOCIAL ACTIVITIES */
+
+.social {
+    background: #eee9fb;
+}
+
+.social-content {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* ACHIEVEMENTS */
+
+.achievements {
+    background: #f8f5ff;
+}
+
+.achievement-list {
+    max-width: 950px;
+    margin: auto;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    background: white;
+    border: 1px solid #cbb9ed;
+    border-left: 5px solid #9278c9;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.achievement-item:hover {
+    transform: translateX(6px);
+}
+
+.achievement-icon {
+    font-size: 35px;
+    min-width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    background: #eee7ff;
+    border-radius: 14px;
+}
+
+.achievement-item h2 {
+    color: #7861b6;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.achievement-item p {
+    font-size: 13px;
+    color: #69627e;
+}
+
+/* GOALS */
+
+.goals {
+    background: #eee9fb;
+}
+
+.goal-box {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 45px;
+    border: 1px solid #cbb9ed;
+    border-radius: 25px;
+    background: white;
+    outline: 1px dashed #b8a5e5;
+    outline-offset: 7px;
+}
+
+.goal-box h2 {
+    color: #7861b6;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.goal-box p {
+    font-size: 14px;
+    color: #69627e;
+}
+
+/* CONTACT */
+
+.contact {
+    background: linear-gradient(135deg, #25213f, #594a83);
+    text-align: center;
+    color: white;
+}
+
+.contact .section-title h1 {
+    color: white;
+}
+
+.contact .section-title p {
+    color: #ddd2f5;
+}
+
+.contact-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #c5b2ec;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.07);
+}
+
+.contact-box h2 {
+    color: #e1d3ff;
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    font-size: 14px;
+    color: #e9e1f6;
+    margin: 10px 0;
+}
+
+.contact-box a {
+    color: #e0ceff;
+}
+
+/* FOOTER */
+
+footer {
+    background: #1d1a32;
+    text-align: center;
+    padding: 28px 15px;
+    color: #d7cdef;
+    border-top: 2px solid #8c78c4;
+}
+
+footer h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 850px) {
+    .home {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-art {
+        width: 250px;
+        height: 290px;
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .music-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 11px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    .section-title h1 {
+        font-size: 30px;
+    }
+
+    .about-grid,
+    .hobby-grid,
+    .social-content {
+        grid-template-columns: 1fr;
+    }
+
+    .home h1 {
+        font-size: 39px;
+    }
+
+    .home-art {
+        width: 220px;
+        height: 270px;
+    }
+
+    .intro-box,
+    .music-box,
+    .goal-box,
+    .contact-box {
+        padding: 25px;
+    }
+
+    .achievement-item {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <div class="logo">Divya M P ✧</div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#achievements">ACHIEVEMENTS</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+
+    <div class="home-content">
+        <p class="small-heading">✧ WELCOME TO MY PERSONAL SPACE ✧</p>
+
+        <h1>Hello, I'm <span>Divya M P</span></h1>
+
+        <h3>Engineering Student | Music Lover | Creative Soul</h3>
+
+        <p>
+            A curious learner, a passionate music enthusiast and
+            someone who believes in creating her own path.
+            I love exploring new opportunities, expressing my
+            creativity and turning my interests into meaningful
+            experiences.
+        </p>
+
+        <a href="#about" class="btn">EXPLORE MY WORLD →</a>
+    </div>
+
+    <div class="home-art">
+        <div class="note">♫</div>
+        <h2>Dream • Create • Achieve</h2>
+        <p>MY JOURNEY, MY PASSION, MY STORY</p>
+    </div>
+
+</section>
+
+<!-- INTRODUCTION -->
+<section class="intro">
+
+    <div class="section-title">
+        <h1>A Little <span>About Me</span></h1>
+        <p>✧ A glimpse into my world ✧</p>
+        <div class="ornament">❀</div>
+    </div>
+
+    <div class="intro-box frame">
+        <p>
+            I am a student pursuing BE in Civil Engineering at
+            KLS Gogte Institute of Technology, Belagavi.
+            Along with academics, music and creativity hold
+            a special place in my life.
+        </p>
+
+        <p>
+            I enjoy learning different things, taking part in
+            activities, exploring my talents and challenging
+            myself to grow. Whether it is singing a song,
+            creating artwork, exploring nature or learning
+            something new, I believe every experience teaches
+            us something valuable.
+        </p>
+
+        <p>
+            I believe that everyone has a unique journey.
+            My aim is to keep improving, stay creative and
+            build a future where I can make the best use
+            of my knowledge and talents.
+        </p>
+    </div>
+
+</section>
+
+<!-- ABOUT ME -->
+<section class="about" id="about">
+
+    <div class="section-title">
+        <h1>Know <span>More About Me</span></h1>
+        <p>✧ My education, personality and passions ✧</p>
+        <div class="ornament">❀</div>
+    </div>
+
+    <div class="about-grid">
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h2>Educational Background</h2>
+            <p>
+                I am pursuing Bachelor of Engineering in
+                Civil Engineering at KLS Gogte Institute
+                of Technology, Belagavi.
+            </p>
+            <p>
+                Engineering gives me opportunities to develop
+                technical knowledge, problem-solving skills
+                and a practical approach towards learning.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌟</div>
+            <h2>My Personality</h2>
+            <p>
+                I enjoy exploring new ideas, learning new skills
+                and expressing creativity. I believe in staying
+                curious, being responsible and making the most
+                of every opportunity.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h2>Creative Side</h2>
+            <p>
+                Creativity is an important part of my life.
+                I enjoy sketching, painting, photography and
+                discovering different ways to express my ideas.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌿</div>
+            <h2>Love for Nature</h2>
+            <p>
+                I enjoy being around nature, exploring beautiful
+                places and capturing memorable moments through
+                photography. Travelling helps me discover
+                new experiences.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HOBBIES -->
+<section class="hobbies">
+
+    <div class="section-title">
+        <h1>My <span>Interests & Hobbies</span></h1>
+        <p>✧ Things that make my everyday life special ✧</p>
+        <div class="ornament">❀</div>
+    </div>
+
+    <div class="hobby-grid">
+
+        <div class="hobby-card">
+            <div class="icon">🎤</div>
+            <h2>Singing</h2>
+            <p>Expressing my emotions and creativity through music.</p>
+        </div>
+
+        <div class="hobby-card">
+            <div class="icon">🎧</div>
+            <h2>Listening to Music</h2>
+            <p>Exploring different songs, melodies and musical styles.</p>
+        </div>
+
+        <div class="hobby-card">
+            <div class="icon">📸</div>
+            <h2>Photography</h2>
+            <p>Capturing beautiful moments and special memories.</p>
+        </div>
+
+        <div class="hobby-card">
+            <div class="icon">💃</div>
+            <h2>Dancing</h2>
+            <p>Enjoying rhythm, movement and self-expression.</p>
+        </div>
+
+        <div class="hobby-card">
+            <div class="icon">🖌️</div>
+            <h2>Painting & Sketching</h2>
+            <p>Bringing imagination and ideas to life through art.</p>
+        </div>
+
+        <div class="hobby-card">
+            <div class="icon">✈️</div>
+            <h2>Travelling</h2>
+            <p>Exploring new places and experiencing different cultures.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MUSICAL JOURNEY -->
+<section class="music">
+
+    <div class="section-title">
+        <h1>My Musical <span>Journey</span></h1>
+        <p>✧ Where words meet melodies ✧</p>
+        <div class="ornament">♫</div>
+    </div>
+
+    <div class="music-box">
+
+        <h2>A Passion Beyond Words ♫</h2>
+
+        <p>
+            Music has always been one of my favourite ways
+            to express myself. Singing gives me an opportunity
+            to share emotions, explore melodies and connect
+            with people.
+        </p>
+
+        <p>
+            Participating in singing competitions has given
+            me valuable experiences and opportunities to
+            improve my performance. Every stage, every song
+            and every experience adds something special
+            to my musical journey.
+        </p>
+
+        <p>
+            I enjoy exploring different genres of music,
+            learning new songs and sharing my singing
+            through performances and song covers.
+        </p>
+
+        <div class="music-highlights">
+
+            <div class="music-highlight">
+                <h3>♫ Singing</h3>
+                <p>My favourite way of expressing myself.</p>
+            </div>
+
+            <div class="music-highlight">
+                <h3>♪ Performing</h3>
+                <p>Learning and growing through every stage.</p>
+            </div>
+
+            <div class="music-highlight">
+                <h3>🎼 Exploring</h3>
+                <p>Discovering different melodies and genres.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SOCIAL ACTIVITIES -->
+<section class="social">
+
+    <div class="section-title">
+        <h1>Social <span>Activities</span></h1>
+        <p>✧ Learning beyond the classroom ✧</p>
+        <div class="ornament">❀</div>
+    </div>
+
+    <div class="social-content">
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h2>Scouts and Guides</h2>
+            <p>
+                Being involved in Scouts and Guides activities
+                helps me understand the importance of discipline,
+                teamwork, responsibility and helping others.
+                Such experiences encourage me to become
+                more confident and active.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌸</div>
+            <h2>Cultural & Religious Activities</h2>
+            <p>
+                I enjoy participating in religious programmes
+                and cultural activities. They give me opportunities
+                to connect with people, celebrate traditions
+                and express my interests.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements" id="achievements">
+
+    <div class="section-title">
+        <h1>My <span>Achievements</span></h1>
+        <p>✧ Every achievement is a beautiful milestone ✧</p>
+        <div class="ornament">✦</div>
+    </div>
+
+    <div class="achievement-list">
+
+        <div class="achievement-item">
+            <div class="achievement-icon">🎤</div>
+            <div>
+                <h2>District-Level Singing Competitions</h2>
+                <p>
+                    I have won several district-level singing
+                    competitions. These experiences helped me
+                    develop confidence and improve my stage
+                    performance.
+                </p>
+            </div>
+        </div>
+
+        <div class="achievement-item">
+            <div class="achievement-icon">🏆</div>
+            <div>
+                <h2>State-Level Singing Competitions</h2>
+                <p>
+                    I have also achieved success in state-level
+                    singing competitions, which encouraged me
+                    to continue working towards my musical goals.
+                </p>
+            </div>
+        </div>
+
+        <div class="achievement-item">
+            <div class="achievement-icon">🌟</div>
+            <div>
+                <h2>Karnataka Government Programme</h2>
+                <p>
+                    Recently, I won a state-level singing
+                    competition and was selected for a state-level
+                    programme conducted by the Karnataka Government.
+                </p>
+            </div>
+        </div>
+
+        <div class="achievement-item">
+            <div class="achievement-icon">🎨</div>
+            <div>
+                <h2>Art & Painting Awards</h2>
+                <p>
+                    I have received several awards in art and
+                    painting. These achievements motivate me
+                    to explore my creativity and imagination.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GOALS -->
+<section class="goals">
+
+    <div class="section-title">
+        <h1>My Dreams & <span>Goals</span></h1>
+        <p>✧ Looking forward to what lies ahead ✧</p>
+        <div class="ornament">❀</div>
+    </div>
+
+    <div class="goal-box">
+        <h2>Creating My Own Path</h2>
+
+        <p>
+            My goal is to grow as an engineer while continuing
+            to explore my passion for music and creativity.
+            I want to learn new skills, gain meaningful
+            experiences and make the best use of the opportunities
+            that come my way.
+        </p>
+
+        <p>
+            I believe success is not just about achievements;
+            it is also about learning, improving and enjoying
+            the journey. I look forward to building a future
+            filled with purpose, creativity and happiness.
+        </p>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+
+    <div class="section-title">
+        <h1>Let's <span>Connect</span></h1>
+        <p>Thank you for being a part of my little world.</p>
+        <div class="ornament">✧</div>
+    </div>
+
+    <div class="contact-box">
+
+        <h2>Get in Touch ♡</h2>
+
+        <p>
+            I would love to connect, share ideas and
+            explore new opportunities.
+        </p>
+
+        <p>✉ Email: Add your email address here</p>
+
+        <p>
+            📷 Instagram:
+            <a href="https://instagram.com/" target="_blank">
+                Add your Instagram username
+            </a>
+        </p>
+
+        <p>📍 Belagavi, Karnataka, India</p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>Divya M P ✧</h2>
+
+    <p>Dream • Create • Inspire</p>
+
+    <p>
+        A personal portfolio made with creativity and passion.
+    </p>
+
+    <p>© 2026 Divya M P. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
